@@ -1,0 +1,23 @@
+{
+  "name": "spendwise-ai",
+  "version": "1.0.0",
+  "description": "SpendWise AI - Intelligent Expense Management, Fraud Detection & Automated Reimbursement Platform",
+  "scripts": {
+    "dev": "npm run client",
+    "start": "node server/dist/index.js",
+    "build": "npm run build --prefix client && npm run build --prefix server",
+    "install:all": "npm install --prefix client && npm install --prefix server",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "test": "npm test --prefix server",
+    "build:client": "npm run build --prefix client",
+    "seed": "npm run seed --prefix server"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "keywords": ["spendwise", "expense-management", "ai", "ocr", "fraud-detection"],
+  "author": "SpendWise AI Team",
+  "license": "ISC"
+}
